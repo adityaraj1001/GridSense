@@ -1,0 +1,162 @@
+{
+  "evaluation_timestamp": "2026-10-24 13:29:18",
+  "evaluation_time_seconds": 6.93,
+  "total_records": 428625,
+  "unique_meters": 84,
+  "date_coverage": {
+    "start": "2019-05-01 00:18:00",
+    "end": "2021-10-31 23:48:00"
+  },
+  "rule_based_detection": {
+    "count": 40104,
+    "percentage": 9.356
+  },
+  "machine_learning_detection": {
+    "count": 8466,
+    "percentage": 1.975
+  },
+  "agreement_analysis": {
+    "both_agree_count": 4290,
+    "both_agree_pct": 1.001,
+    "rule_only_count": 35814,
+    "ml_only_count": 4176,
+    "nominal_count": 384345,
+    "union_anomalies_count": 44280,
+    "union_percentage": 10.331,
+    "jaccard_similarity": 0.0969,
+    "overlap_coefficient": 0.5067,
+    "methodology_note": "Ground truth theft/fraud labels are unavailable in open academic smart meter datasets. Evaluation is conducted using unsupervised agreement metrics, domain-rule cross-validation, and distribution stability rather than fabricated precision/recall metrics."
+  },
+  "city_breakdown": [
+    {
+      "city": "Mathura",
+      "total_readings": 158353,
+      "meters": 38,
+      "rule_anomalies": 16963,
+      "ml_anomalies": 3378,
+      "combined_anomalies": 18625,
+      "anomaly_rate_pct": 11.76169696816606
+    },
+    {
+      "city": "Bareilly",
+      "total_readings": 270272,
+      "meters": 46,
+      "rule_anomalies": 23141,
+      "ml_anomalies": 5088,
+      "combined_anomalies": 25655,
+      "anomaly_rate_pct": 9.492289249348804
+    }
+  ],
+  "top_anomalous_meters": [
+    {
+      "meter_id": "BR35",
+      "city": "Bareilly",
+      "total_readings": 7276,
+      "total_kwh": 205.9390000000007,
+      "rule_anomalies": 1366,
+      "ml_anomalies": 538,
+      "combined_anomalies": 1685,
+      "max_anomaly_score": 0.7486075204257872,
+      "anomaly_rate_pct": 23.15832875206157
+    },
+    {
+      "meter_id": "BR45",
+      "city": "Bareilly",
+      "total_readings": 7848,
+      "total_kwh": 232.63199999999787,
+      "rule_anomalies": 1380,
+      "ml_anomalies": 457,
+      "combined_anomalies": 1666,
+      "max_anomaly_score": 0.740178892145572,
+      "anomaly_rate_pct": 21.228338430173295
+    },
+    {
+      "meter_id": "BR33",
+      "city": "Bareilly",
+      "total_readings": 7403,
+      "total_kwh": 54.83500000000114,
+      "rule_anomalies": 1515,
+      "ml_anomalies": 14,
+      "combined_anomalies": 1518,
+      "max_anomaly_score": 0.6519476074540077,
+      "anomaly_rate_pct": 20.50520059435364
+    },
+    {
+      "meter_id": "BR36",
+      "city": "Bareilly",
+      "total_readings": 7335,
+      "total_kwh": 176.31600000000148,
+      "rule_anomalies": 1367,
+      "ml_anomalies": 277,
+      "combined_anomalies": 1467,
+      "max_anomaly_score": 0.7398018500149202,
+      "anomaly_rate_pct": 20.0
+    },
+    {
+      "meter_id": "BR32",
+      "city": "Bareilly",
+      "total_readings": 7389,
+      "total_kwh": 132.32300000000194,
+      "rule_anomalies": 1417,
+      "ml_anomalies": 102,
+      "combined_anomalies": 1430,
+      "max_anomaly_score": 0.6553353446132825,
+      "anomaly_rate_pct": 19.35309243470023
+    },
+    {
+      "meter_id": "BR37",
+      "city": "Bareilly",
+      "total_readings": 7217,
+      "total_kwh": 149.337000000001,
+      "rule_anomalies": 1373,
+      "ml_anomalies": 208,
+      "combined_anomalies": 1405,
+      "max_anomaly_score": 0.7190197323588442,
+      "anomaly_rate_pct": 19.46792295967854
+    },
+    {
+      "meter_id": "BR39",
+      "city": "Bareilly",
+      "total_readings": 6552,
+      "total_kwh": 44.22200000000146,
+      "rule_anomalies": 1344,
+      "ml_anomalies": 6,
+      "combined_anomalies": 1344,
+      "max_anomaly_score": 0.6319145103980747,
+      "anomaly_rate_pct": 20.51282051282051
+    },
+    {
+      "meter_id": "BR34",
+      "city": "Bareilly",
+      "total_readings": 6831,
+      "total_kwh": 40.435000000001,
+      "rule_anomalies": 1244,
+      "ml_anomalies": 30,
+      "combined_anomalies": 1244,
+      "max_anomaly_score": 0.6809947023666069,
+      "anomaly_rate_pct": 18.211096471966037
+    },
+    {
+      "meter_id": "BR38",
+      "city": "Bareilly",
+      "total_readings": 5096,
+      "total_kwh": 162.45699999999985,
+      "rule_anomalies": 838,
+      "ml_anomalies": 386,
+      "combined_anomalies": 1079,
+      "max_anomaly_score": 0.7243331298686398,
+      "anomaly_rate_pct": 21.1734693877551
+    },
+    {
+      "meter_id": "MH45",
+      "city": "Mathura",
+      "total_readings": 4847,
+      "total_kwh": 111.81900000000036,
+      "rule_anomalies": 906,
+      "ml_anomalies": 275,
+      "combined_anomalies": 1046,
+      "max_anomaly_score": 0.7450851596234016,
+      "anomaly_rate_pct": 21.58035898493914
+    }
+  ]
+}

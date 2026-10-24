@@ -1,0 +1,127 @@
+# GridSense Configuration File
+# Project: Electricity Consumption Anomaly Detection Using Big Data & Machine Learning
+# Course: INT315 Cluster Computing
+
+project:
+  name: "GridSense"
+  version: "1.0.0"
+  course: "INT315"
+  author: "Aditya Raj"
+  institution: "Lovely Professional University"
+
+paths:
+  raw_data_dir: "C:\\Users\\Adity\\Downloads\\dataverse_files"
+  project_root: "C:\\Users\\Adity\\.gemini\\antigravity\\scratch\\GridSense"
+  cleaned_data_dir: "C:\\Users\\Adity\\.gemini\\antigravity\\scratch\\GridSense\\data\\cleaned"
+  features_data_dir: "C:\\Users\\Adity\\.gemini\\antigravity\\scratch\\GridSense\\data\\features"
+  models_dir: "C:\\Users\\Adity\\.gemini\\antigravity\\scratch\\GridSense\\models"
+  outputs_dir: "C:\\Users\\Adity\\.gemini\\antigravity\\scratch\\GridSense\\outputs"
+  summaries_dir: "C:\\Users\\Adity\\.gemini\\antigravity\\scratch\\GridSense\\outputs\\summaries"
+  anomalies_dir: "C:\\Users\\Adity\\.gemini\\antigravity\\scratch\\GridSense\\outputs\\anomalies"
+  charts_dir: "C:\\Users\\Adity\\.gemini\\antigravity\\scratch\\GridSense\\outputs\\charts"
+  logs_dir: "C:\\Users\\Adity\\.gemini\\antigravity\\scratch\\GridSense\\outputs\\logs"
+  screenshots_dir: "C:\\Users\\Adity\\.gemini\\antigravity\\scratch\\GridSense\\screenshots"
+  report_dir: "C:\\Users\\Adity\\.gemini\\antigravity\\scratch\\GridSense\\report"
+
+spark:
+  app_name: "GridSense_Cluster_Computing"
+  master: "local[*]"
+  driver_memory: "4g"
+  executor_memory: "4g"
+  shuffle_partitions: 8
+  log_level: "WARN"
+  driver_host: "127.0.0.1"
+  driver_bind_address: "127.0.0.1"
+
+dataset:
+  selected_files:
+    - "CEEW - Smart meter data Bareilly 2020.csv"
+    - "CEEW - Smart meter data Bareilly 2021.csv"
+    - "CEEW - Smart meter data Mathura 2019.csv"
+    - "CEEW - Smart meter data Mathura 2020.csv"
+    - "SM Cleaned Data BR2019.csv"
+    - "SM Cleaned Data MH2021.csv"
+  aggregated_files:
+    - "SM Cleaned Data BR Aggregated.csv"
+    - "SM Cleaned Data MH Aggregated.csv"
+  sampling_rate_minutes: 3
+  column_mapping:
+    x_Timestamp: "timestamp"
+    t_kWh: "kwh"
+    "z_Avg Voltage (Volt)": "voltage"
+    "z_Avg Current (Amp)": "current"
+    "y_Freq (Hz)": "frequency"
+    meter: "meter_id"
+
+data_quality_rules:
+  min_kwh: 0.0
+  max_kwh_3min: 5.0
+  min_voltage: 100.0
+  max_voltage: 300.0
+  severe_low_voltage: 160.0
+  severe_high_voltage: 275.0
+  min_current: 0.0
+  max_current: 60.0
+  severe_high_current: 35.0
+  min_frequency: 47.0
+  max_frequency: 53.0
+  normal_freq_low: 49.2
+  normal_freq_high: 50.8
+
+rule_based_detection:
+  rules:
+    negative_consumption:
+      enabled: true
+      description: "Negative active energy reading indicates metering error or sensor fault"
+      condition: "kwh < 0.0"
+    extreme_spike_kwh:
+      enabled: true
+      description: "Consumption exceeds 2.5 kWh in a 3-minute interval (over 50 kW load)"
+      condition: "kwh > 2.5"
+    abnormal_voltage_surge:
+      enabled: true
+      description: "Severe over-voltage surge exceeding 280V"
+      condition: "voltage > 280.0"
+    abnormal_voltage_drop:
+      enabled: true
+      description: "Severe under-voltage sag below 160V while load is active"
+      condition: "voltage < 160.0 AND voltage > 0.0"
+    grid_frequency_deviation:
+      enabled: true
+      description: "Frequency deviation beyond IEGC limits (<48.5 Hz or >51.5 Hz)"
+      condition: "frequency < 48.5 OR frequency > 51.5"
+    extreme_current_overload:
+      enabled: true
+      description: "Current exceeds 40A on residential single-phase connection"
+      condition: "current > 40.0"
+    zero_voltage_with_current:
+      enabled: true
+      description: "Current recorded while voltage reading is zero (tampering or sensor bypass)"
+      condition: "voltage == 0.0 AND current > 1.0"
+    statistical_zscore_kwh:
+      enabled: true
+      description: "Consumption exceeds meter historical mean by more than 4 standard deviations"
+      threshold_zscore: 4.0
+
+machine_learning:
+  model_type: "IsolationForest"
+  contamination: 0.02
+  n_estimators: 100
+  max_samples: 512
+  random_state: 42
+  sample_size_for_training: 250000
+  feature_columns:
+    - "kwh"
+    - "voltage"
+    - "current"
+    - "frequency"
+    - "hour"
+    - "dayofweek"
+    - "kwh_zscore"
+    - "kwh_diff"
+    - "volt_dev"
+
+dashboard:
+  port: 8501
+  theme: "light"
+  max_display_rows: 5000

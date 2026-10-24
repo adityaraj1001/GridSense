@@ -1,0 +1,27 @@
+{
+  "model_type": "IsolationForest",
+  "contamination": 0.02,
+  "n_estimators": 100,
+  "max_samples": 512,
+  "random_state": 42,
+  "features": [
+    "kwh",
+    "voltage",
+    "current",
+    "frequency",
+    "hour",
+    "dayofweek",
+    "kwh_zscore",
+    "kwh_diff",
+    "volt_dev"
+  ],
+  "training_sample_count": 250000,
+  "training_time_seconds": 3.5,
+  "score_min": 0.3620754493114947,
+  "score_max": 0.7486075204257872,
+  "score_mean": 0.43906831942589564,
+  "score_std": 0.06251902148328092,
+  "anomaly_threshold": -0.6110194324736795,
+  "saved_model_path": "C:\\Users\\Adity\\.gemini\\antigravity\\scratch\\GridSense\\models\\isolation_forest_model.joblib",
+  "saved_scaler_path": "C:\\Users\\Adity\\.gemini\\antigravity\\scratch\\GridSense\\models\\robust_scaler.joblib"
+}

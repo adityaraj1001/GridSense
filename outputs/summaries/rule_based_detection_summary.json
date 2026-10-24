@@ -1,0 +1,19 @@
+{
+  "detection_method": "Rule-Based (Method A)",
+  "execution_time_seconds": 1.28,
+  "total_records_analyzed": 428625,
+  "total_rule_anomalies": 40104,
+  "anomaly_percentage": 9.3564,
+  "rule_breakdown": {
+    "neg_kwh_count": 0,
+    "spike_kwh_count": 0,
+    "over_voltage_count": 1810,
+    "under_voltage_count": 657,
+    "freq_violation_count": 35226,
+    "current_overload_count": 0,
+    "suspect_bypass_count": 14,
+    "stat_spike_count": 2468,
+    "abrupt_ramp_count": 0,
+    "total_rule_anomalies": 40104
+  }
+}

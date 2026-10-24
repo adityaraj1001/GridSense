@@ -1,0 +1,370 @@
+{
+  "inspection_timestamp": "2026-10-24 13:19:55",
+  "raw_directory": "C:\\Users\\Adity\\Downloads\\dataverse_files",
+  "files_summary": [
+    {
+      "file_name": "CEEW - Smart meter data Bareilly 2020.csv",
+      "size_mb": 308.4,
+      "row_count": 6627360,
+      "column_count": 6,
+      "columns": [
+        "x_Timestamp",
+        "t_kWh",
+        "z_Avg Voltage (Volt)",
+        "z_Avg Current (Amp)",
+        "y_Freq (Hz)",
+        "meter"
+      ],
+      "is_aggregated": false,
+      "is_cleaned_named": false,
+      "timestamp_column": "x_Timestamp",
+      "meter_column": "meter",
+      "unique_meters": 46,
+      "min_timestamp": "2020-01-01 00:00:00",
+      "max_timestamp": "2020-12-31 23:57:00",
+      "sample_records": [
+        {
+          "x_Timestamp": "2020-01-01 00:00:00",
+          "t_kWh": "0.002",
+          "z_Avg Voltage (Volt)": "251.26",
+          "z_Avg Current (Amp)": "0.15",
+          "y_Freq (Hz)": "49.97",
+          "meter": "BR02"
+        },
+        {
+          "x_Timestamp": "2020-01-01 00:03:00",
+          "t_kWh": "0.001",
+          "z_Avg Voltage (Volt)": "251.23",
+          "z_Avg Current (Amp)": "0.15",
+          "y_Freq (Hz)": "49.94",
+          "meter": "BR02"
+        },
+        {
+          "x_Timestamp": "2020-01-01 00:06:00",
+          "t_kWh": "0.001",
+          "z_Avg Voltage (Volt)": "251.55",
+          "z_Avg Current (Amp)": "0.14",
+          "y_Freq (Hz)": "49.94",
+          "meter": "BR02"
+        }
+      ]
+    },
+    {
+      "file_name": "CEEW - Smart meter data Bareilly 2021.csv",
+      "size_mb": 183.76,
+      "row_count": 3948960,
+      "column_count": 6,
+      "columns": [
+        "x_Timestamp",
+        "t_kWh",
+        "z_Avg Voltage (Volt)",
+        "z_Avg Current (Amp)",
+        "y_Freq (Hz)",
+        "meter"
+      ],
+      "is_aggregated": false,
+      "is_cleaned_named": false,
+      "timestamp_column": "x_Timestamp",
+      "meter_column": "meter",
+      "unique_meters": 38,
+      "min_timestamp": "2021-01-01 00:00:00",
+      "max_timestamp": "2021-10-31 23:57:00",
+      "sample_records": [
+        {
+          "x_Timestamp": "2021-01-02 00:00:00",
+          "t_kWh": "0.002",
+          "z_Avg Voltage (Volt)": "253.36",
+          "z_Avg Current (Amp)": "0.25",
+          "y_Freq (Hz)": "50.09",
+          "meter": "BR02"
+        },
+        {
+          "x_Timestamp": "2021-01-02 00:03:00",
+          "t_kWh": "0.002",
+          "z_Avg Voltage (Volt)": "253.87",
+          "z_Avg Current (Amp)": "0.25",
+          "y_Freq (Hz)": "50.11",
+          "meter": "BR02"
+        },
+        {
+          "x_Timestamp": "2021-01-02 00:06:00",
+          "t_kWh": "0.02",
+          "z_Avg Voltage (Volt)": "253.25",
+          "z_Avg Current (Amp)": "1.67",
+          "y_Freq (Hz)": "50.14",
+          "meter": "BR02"
+        }
+      ]
+    },
+    {
+      "file_name": "CEEW - Smart meter data Mathura 2019.csv",
+      "size_mb": 167.36,
+      "row_count": 3588874,
+      "column_count": 6,
+      "columns": [
+        "x_Timestamp",
+        "t_kWh",
+        "z_Avg Voltage (Volt)",
+        "z_Avg Current (Amp)",
+        "y_Freq (Hz)",
+        "meter"
+      ],
+      "is_aggregated": false,
+      "is_cleaned_named": false,
+      "timestamp_column": "x_Timestamp",
+      "meter_column": "meter",
+      "unique_meters": 38,
+      "min_timestamp": "2019-05-01 00:00:00",
+      "max_timestamp": "2019-12-31 23:57:00",
+      "sample_records": [
+        {
+          "x_Timestamp": "2019-05-01 00:00:00",
+          "t_kWh": "0.017",
+          "z_Avg Voltage (Volt)": "252.42",
+          "z_Avg Current (Amp)": "1.32",
+          "y_Freq (Hz)": "50.02",
+          "meter": "MH01"
+        },
+        {
+          "x_Timestamp": "2019-05-01 00:03:00",
+          "t_kWh": "0.016",
+          "z_Avg Voltage (Volt)": "251.76",
+          "z_Avg Current (Amp)": "1.27",
+          "y_Freq (Hz)": "50.01",
+          "meter": "MH01"
+        },
+        {
+          "x_Timestamp": "2019-05-01 00:06:00",
+          "t_kWh": "0.016",
+          "z_Avg Voltage (Volt)": "250.26",
+          "z_Avg Current (Amp)": "1.27",
+          "y_Freq (Hz)": "50.0",
+          "meter": "MH01"
+        }
+      ]
+    },
+    {
+      "file_name": "CEEW - Smart meter data Mathura 2020.csv",
+      "size_mb": 174.17,
+      "row_count": 3759360,
+      "column_count": 6,
+      "columns": [
+        "x_Timestamp",
+        "t_kWh",
+        "z_Avg Voltage (Volt)",
+        "z_Avg Current (Amp)",
+        "y_Freq (Hz)",
+        "meter"
+      ],
+      "is_aggregated": false,
+      "is_cleaned_named": false,
+      "timestamp_column": "x_Timestamp",
+      "meter_column": "meter",
+      "unique_meters": 38,
+      "min_timestamp": "2020-01-01 00:00:00",
+      "max_timestamp": "2020-12-31 23:57:00",
+      "sample_records": [
+        {
+          "x_Timestamp": "2020-01-06 00:00:00",
+          "t_kWh": "0.004",
+          "z_Avg Voltage (Volt)": "261.72",
+          "z_Avg Current (Amp)": "1.19",
+          "y_Freq (Hz)": "50.14",
+          "meter": "MH01"
+        },
+        {
+          "x_Timestamp": "2020-01-06 00:03:00",
+          "t_kWh": "0.005",
+          "z_Avg Voltage (Volt)": "261.96",
+          "z_Avg Current (Amp)": "1.19",
+          "y_Freq (Hz)": "50.15",
+          "meter": "MH01"
+        },
+        {
+          "x_Timestamp": "2020-01-06 00:06:00",
+          "t_kWh": "0.005",
+          "z_Avg Voltage (Volt)": "261.83",
+          "z_Avg Current (Amp)": "1.21",
+          "y_Freq (Hz)": "50.12",
+          "meter": "MH01"
+        }
+      ]
+    },
+    {
+      "file_name": "SM Cleaned Data BR Aggregated.csv",
+      "size_mb": 0.93,
+      "row_count": 28119,
+      "column_count": 3,
+      "columns": [
+        "meter",
+        "Date",
+        "t_kWh"
+      ],
+      "is_aggregated": true,
+      "is_cleaned_named": true,
+      "timestamp_column": "Date",
+      "meter_column": "meter",
+      "unique_meters": 46,
+      "min_timestamp": "2019-05-09",
+      "max_timestamp": "2021-10-31",
+      "sample_records": [
+        {
+          "meter": "BR02",
+          "Date": "2019-07-10",
+          "t_kWh": "6.959999999999997"
+        },
+        {
+          "meter": "BR02",
+          "Date": "2019-07-11",
+          "t_kWh": "4.910999999999991"
+        },
+        {
+          "meter": "BR02",
+          "Date": "2019-07-13",
+          "t_kWh": "5.872999999999988"
+        }
+      ]
+    },
+    {
+      "file_name": "SM Cleaned Data BR2019.csv",
+      "size_mb": 135.95,
+      "row_count": 2919315,
+      "column_count": 6,
+      "columns": [
+        "x_Timestamp",
+        "t_kWh",
+        "z_Avg Voltage (Volt)",
+        "z_Avg Current (Amp)",
+        "y_Freq (Hz)",
+        "meter"
+      ],
+      "is_aggregated": false,
+      "is_cleaned_named": true,
+      "timestamp_column": "x_Timestamp",
+      "meter_column": "meter",
+      "unique_meters": 46,
+      "min_timestamp": "2019-05-09 00:00:00",
+      "max_timestamp": "2019-12-31 23:57:00",
+      "sample_records": [
+        {
+          "x_Timestamp": "2019-07-10 00:00:00",
+          "t_kWh": "0.021",
+          "z_Avg Voltage (Volt)": "243.1",
+          "z_Avg Current (Amp)": "1.79",
+          "y_Freq (Hz)": "50.02",
+          "meter": "BR02"
+        },
+        {
+          "x_Timestamp": "2019-07-10 00:03:00",
+          "t_kWh": "0.021",
+          "z_Avg Voltage (Volt)": "242.91",
+          "z_Avg Current (Amp)": "1.8",
+          "y_Freq (Hz)": "50.07",
+          "meter": "BR02"
+        },
+        {
+          "x_Timestamp": "2019-07-10 00:06:00",
+          "t_kWh": "0.021",
+          "z_Avg Voltage (Volt)": "242.46",
+          "z_Avg Current (Amp)": "1.83",
+          "y_Freq (Hz)": "50.0",
+          "meter": "BR02"
+        }
+      ]
+    },
+    {
+      "file_name": "SM Cleaned Data MH Aggregated.csv",
+      "size_mb": 0.55,
+      "row_count": 16491,
+      "column_count": 3,
+      "columns": [
+        "meter",
+        "Date",
+        "t_kWh"
+      ],
+      "is_aggregated": true,
+      "is_cleaned_named": true,
+      "timestamp_column": "Date",
+      "meter_column": "meter",
+      "unique_meters": 38,
+      "min_timestamp": "2019-05-01",
+      "max_timestamp": "2021-02-20",
+      "sample_records": [
+        {
+          "meter": "MH01",
+          "Date": "2019-05-01",
+          "t_kWh": "5.251999999999993"
+        },
+        {
+          "meter": "MH01",
+          "Date": "2019-05-02",
+          "t_kWh": "4.769999999999991"
+        },
+        {
+          "meter": "MH01",
+          "Date": "2019-05-03",
+          "t_kWh": "5.168999999999989"
+        }
+      ]
+    },
+    {
+      "file_name": "SM Cleaned Data MH2021.csv",
+      "size_mb": 25.47,
+      "row_count": 550560,
+      "column_count": 6,
+      "columns": [
+        "x_Timestamp",
+        "t_kWh",
+        "z_Avg Voltage (Volt)",
+        "z_Avg Current (Amp)",
+        "y_Freq (Hz)",
+        "meter"
+      ],
+      "is_aggregated": false,
+      "is_cleaned_named": true,
+      "timestamp_column": "x_Timestamp",
+      "meter_column": "meter",
+      "unique_meters": 35,
+      "min_timestamp": "2021-01-01 00:00:00",
+      "max_timestamp": "2021-02-20 23:57:00",
+      "sample_records": [
+        {
+          "x_Timestamp": "2021-01-02 00:00:00",
+          "t_kWh": "0.0",
+          "z_Avg Voltage (Volt)": "0.0",
+          "z_Avg Current (Amp)": "0.0",
+          "y_Freq (Hz)": "0.0",
+          "meter": "MH01"
+        },
+        {
+          "x_Timestamp": "2021-01-02 00:03:00",
+          "t_kWh": "0.0",
+          "z_Avg Voltage (Volt)": "0.0",
+          "z_Avg Current (Amp)": "0.0",
+          "y_Freq (Hz)": "0.0",
+          "meter": "MH01"
+        },
+        {
+          "x_Timestamp": "2021-01-02 00:06:00",
+          "t_kWh": "0.0",
+          "z_Avg Voltage (Volt)": "0.0",
+          "z_Avg Current (Amp)": "0.0",
+          "y_Freq (Hz)": "0.0",
+          "meter": "MH01"
+        }
+      ]
+    }
+  ],
+  "file_overlap_analysis": {},
+  "selection_rationale": {
+    "selected_high_frequency_files": [
+      "CEEW - Smart meter data Bareilly 2020.csv",
+      "CEEW - Smart meter data Bareilly 2021.csv",
+      "CEEW - Smart meter data Mathura 2019.csv",
+      "CEEW - Smart meter data Mathura 2020.csv",
+      "SM Cleaned Data BR2019.csv",
+      "SM Cleaned Data MH2021.csv"
+    ],
+    "rationale": "The 6 selected files represent the complete continuous set of 3-minute interval smart meter readings for Mathura (2019, 2020, 2021) and Bareilly (2019, 2020, 2021). The two aggregated files ('SM Cleaned Data BR Aggregated.csv' and 'SM Cleaned Data MH Aggregated.csv') contain pre-computed daily totals rather than 3-minute readings, and are reserved for baseline validation rather than high-frequency anomaly detection."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "audit_timestamp": "2026-10-24 13:28:18",
+  "processing_time_seconds": 38.05,
+  "initial_record_count": 428625,
+  "dropped_duplicates": 0,
+  "final_cleaned_count": 428625,
+  "null_statistics": {
+    "null_timestamp": 0,
+    "null_kwh": 0,
+    "null_voltage": 0,
+    "null_current": 0,
+    "null_frequency": 0,
+    "null_meter_id": 0
+  },
+  "duplicate_groups_count": 0,
+  "quality_metrics": {
+    "power_outages_count": 34986,
+    "negative_kwh_count": 0,
+    "voltage_extreme_count": 375,
+    "frequency_extreme_count": 35194,
+    "current_extreme_count": 0
+  }
+}

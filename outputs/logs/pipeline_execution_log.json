@@ -1,0 +1,27 @@
+{
+  "execution_timestamp": "2026-10-24 13:29:28",
+  "course": "INT315 Cluster Computing",
+  "project": "GridSense",
+  "sample_fraction": 0.02,
+  "total_records_processed": 428625,
+  "clean_records_retained": 428625,
+  "hardware_environment": {
+    "os": "Windows 11",
+    "spark_version": "4.2.0",
+    "python_version": "3.14.6",
+    "java_version": "17.0.12",
+    "master_cores": "local[*]"
+  },
+  "stage_timings": {
+    "spark_initialization_seconds": 7.35,
+    "data_ingestion_seconds": 6.9,
+    "data_cleaning_seconds": 43.82,
+    "feature_engineering_seconds": 19.5,
+    "rule_based_detection_seconds": 1.32,
+    "ml_training_seconds": 5.77,
+    "ml_scoring_seconds": 20.76,
+    "evaluation_seconds": 6.95,
+    "visualization_seconds": 8.23,
+    "total_pipeline_seconds": 122.57
+  }
+}
